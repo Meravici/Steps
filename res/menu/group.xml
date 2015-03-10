@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.steps.steps.GroupActivity" >
+ 
+ 	<item android:id="@+id/refresh"
+          android:icon="@drawable/ic_action_refresh"
+          android:title="@string/refresh"
+          android:showAsAction="ifRoom" 
+          android:onClick="refresh"/>
+ 	
+ 	<item
+        android:id="@+id/add_task"
+        android:orderInCategory="100"
+        android:title="@string/add_task"
+        android:icon="@drawable/ic_action_new_attachment"
+        android:showAsAction="ifRoom" 
+        android:onClick="addTask" />
+    
+    <item
+        android:id="@+id/members"
+        android:orderInCategory="100"
+        android:title="@string/members"
+        android:icon="@drawable/ic_action_group"
+        android:showAsAction="ifRoom" 
+        android:onClick="getMembers"/>
+    
+    <item
+        android:id="@+id/add_member"
+        android:orderInCategory="100"
+        android:title="@string/add_member"
+        android:icon="@drawable/ic_action_add_person"
+        android:showAsAction="ifRoom" 
+        android:onClick="addMember" />
+    
+	<item
+        android:id="@+id/leave_group"
+        android:orderInCategory="100"
+        android:title="@string/leave_group"
+        android:showAsAction="never" 
+        android:onClick="leaveGroup" />
+    
+</menu>

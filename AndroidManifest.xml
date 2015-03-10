@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.steps"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noActionBar" >
+        </activity>
+        <activity
+            android:name=".activities.GroupsActivity"
+            android:label="@string/title_activity_groups"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noActionBar" >
+        </activity>
+        <activity
+            android:name=".activities.AddGroupActivity"
+            android:label="@string/title_activity_add_group"
+            android:parentActivityName=".activities.GroupsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.GroupActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.GroupsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.GroupMembersActivity"
+            android:label="@string/title_activity_group_members"
+            android:parentActivityName=".activities.GroupActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="GroupActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AddToGroupActivity"
+            android:label="@string/title_activity_add_to_group"
+            android:parentActivityName=".activities.GroupActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.steps.activities.GroupActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AddNewTaskActivity"
+            android:label="@string/title_activity_add_new_task"
+            android:parentActivityName=".activities.GroupActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.steps.activities.GroupActivity" />
+        </activity>
+        <activity
+            android:name=".activities.TaskActivity"
+            android:label="@string/title_activity_task"
+            android:parentActivityName=".activities.GroupActivity"
+             android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.steps.activities.GroupActivity" />
+        </activity>
+    </application>
+
+</manifest>

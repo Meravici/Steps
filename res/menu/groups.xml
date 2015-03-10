@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.steps.steps.GroupsActivity" >
+    
+    <item android:id="@+id/create_group"
+          android:icon="@drawable/ic_action_new"
+          android:title="@string/create_group"
+          android:showAsAction="ifRoom"
+          android:onClick="createGroup" />
+    <item android:id="@+id/refresh"
+          android:icon="@drawable/ic_action_refresh"
+          android:title="@string/refresh"
+          android:showAsAction="ifRoom" 
+          android:onClick="refresh"/>
+    <item android:id="@+id/search_groups"
+          android:title="@string/search_groups"
+          android:enabled="false" />
+    <item 
+        android:id="@+id/logout" 
+        android:title="@string/log_out"
+        android:onClick="logOut" />
+</menu>

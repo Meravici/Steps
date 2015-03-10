@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/steps_blue"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    tools:context="com.steps.activities.SignUpActivity" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+		android:gravity="center_horizontal"
+        android:text="@string/join_steps"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+         />
+    
+     	<FrameLayout
+	        android:id="@+id/fragment"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" />
+    
+</LinearLayout>

@@ -1,0 +1,65 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+        
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+    
+    
+    <style name="noActionBar" parent="android:Theme.Holo.Light">
+            <item name="android:windowActionBar">false</item>
+    		<item name="android:windowNoTitle">true</item>
+    </style>
+    
+    
+    <style name="MyTextView">
+        <item name="android:ems">10</item>
+        <item name="android:background">@drawable/my_edit_text</item>
+		<item name="android:layout_width" >fill_parent</item>
+	    <item name="android:layout_height" >wrap_content</item>
+    </style>
+    
+    <style name="MyListView">
+        <item name="android:padding">5dp</item>
+    </style>
+    
+    <style name="MyButton">
+		<item name="android:background">@drawable/blue_button</item>
+		 <item name="android:layout_width" >fill_parent</item>
+	    <item name="android:layout_height" >wrap_content</item>
+	    <item name="android:textColor">#ffffff</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:textStyle">bold</item>
+    </style>
+    
+    
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/steps_blue</item>
+    </style>
+    
+    <style name="TaskListItem">
+        <item name="android:background">@drawable/task_list_white</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    
+    
+    <style name="header">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/steps_blue</item>
+    </style>
+</resources>

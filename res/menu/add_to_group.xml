@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.steps.AddToGroupActivity" >
+
+    <item
+        android:id="@+id/search"
+        android:title="Search"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:actionLayout="@layout/search_layout"
+    />
+
+</menu>

@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.steps.activities.GroupActivity" >
+
+    <LinearLayout
+            style="@style/MyListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/steps_blue">
+
+        <ImageView
+            android:id="@+id/group_icon"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:contentDescription="@string/group_icon"
+            android:padding="10dp" />
+
+        <TextView
+                android:id="@+id/group_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="@color/white" />
+    
+    </LinearLayout>
+
+	
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1"/>
+	
+</LinearLayout>
